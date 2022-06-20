@@ -7,7 +7,7 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 
 ### Bibliografia
 
-- [CB] Casella, G., & Berger, R. L. (2002). Statistical inference. Pacific Grove, CA: Duxbury .
+- [CB] Casella, G., & Berger, R. L. (2002). Statistical inference. Pacific Grove, CA: Duxbury.
 - [SV] Schervish, M. J. (2012). Theory of statistics. Springer Science & Business Media.
 - [KN] Keener, R. W. (2011). Theoretical statistics: Topics for a core course. Springer. 
 
