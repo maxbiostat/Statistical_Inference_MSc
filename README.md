@@ -13,7 +13,7 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 
 ## Aula 1: Revisão de Probabilidade
 
-- KN Cap 6;
+- KN, Cap 6;
 - SV, Apêndice B.3 (_Conditioning_);
 - CB, Teorema 4.4.3 (pág 164).
 
