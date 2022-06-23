@@ -20,7 +20,7 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 ## Aula 2: Modelo Estatístico
 
 - [Artigo](https://projecteuclid.org/download/pdf_1/euclid.aos/1035844977) de Peter McCullagh sobre o que é um modelo estatístico (ver também referências na introdução);
-- SV, seção 1.5.5 (pág 50).
-
+- SV, seção 1.5.5 (pág 50);
+- CB, seção 6.3.1 (pág 290).
 
 
