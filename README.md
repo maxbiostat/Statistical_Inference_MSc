@@ -23,4 +23,10 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 - SV, seção 1.5.5 (pág 50);
 - CB, seção 6.3.1 (pág 290).
 
+## Aula 3: Suficiência e Neyman-Fisher
 
+[[Lista 1]](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista1_InfEst_MSc.pdf)
+
+- KN, Caps 3 e 6;
+- CB Caps 5 (opcional, fala sobre as propriedades de amostras aleatórias) e 6 (seção 6.2);
+- SV, Cap 2.
