@@ -30,3 +30,8 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 - KN, Caps 3 e 6;
 - CB Caps 5 (opcional, fala sobre as propriedades de amostras aleatórias) e 6 (seção 6.2);
 - SV, Cap 2.
+
+## Aula 4: Suficiência mínima, completude e ancilaridade
+- KN, Cap 3;
+- SV, Cap 2;
+- CB, Cap 6.2.
