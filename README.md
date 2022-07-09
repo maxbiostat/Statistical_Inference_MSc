@@ -35,3 +35,9 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 - KN, Cap 3;
 - SV, Cap 2;
 - CB, Cap 6.2.
+
+## Aula 5: estimadores, estimação não-viesada
+
+- KN, Cap 4;
+- SV, Cap 5;
+- CB, Cap 7.
