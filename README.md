@@ -47,3 +47,12 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 - KN, Cap 2;
 - SV, Cap 2.2;
 - CB, Cap 3.4.
+
+### Aula 6: Estimadores de momentos, mínimos quadrados, consistência
+
+- KN, Cap 8.1;
+- CB, Cap 7.2.1;
+- Scripts:
+1. [Estimando os parâmetros da beta por MM e MQ](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/codigo/beta_estimation.r);
+2. [Modelo não-id Bernoulli](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/codigo/logistic_regression_ols.r);
+3. [Estimação do parâmetro em um modelo semi-paramétrico e não-linear](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/codigo/non_parametric_LS.r). 
