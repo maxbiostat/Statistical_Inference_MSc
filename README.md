@@ -59,7 +59,7 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 
 ## Aula 7: Informação de Fisher, estimador de máxima verossimilhança I
 
-- CB, CAp 7.2.2;
+- CB, Cap 7.2.2;
 - SV, Cap 5.1.3.
 
 ## Aula 8: Estimador de máxima verossimilhança II
