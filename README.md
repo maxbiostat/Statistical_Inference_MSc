@@ -47,6 +47,7 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 - KN, Cap 2;
 - SV, Cap 2.2;
 - CB, Cap 3.4.
+- [Jørgensen & Labouriau](https://impa.br/wp-content/uploads/2017/04/Mon_52.pdf).
 
 ## Aula 6: Estimadores de momentos, mínimos quadrados, consistência
 
