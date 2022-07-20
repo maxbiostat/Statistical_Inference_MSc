@@ -55,7 +55,7 @@ Tópicos marcados com um `*` são extra e em geral designam material mais avanç
 - KN, Cap 2;
 - SV, Cap 2.2;
 - CB, Cap 3.4;
-- [Jørgensen & Labouriau](https://impa.br/wp-content/uploads/2017/04/Mon_52.pdf).
+- `*` [Jørgensen & Labouriau](https://impa.br/wp-content/uploads/2017/04/Mon_52.pdf).
 
 ## Aula 6: Estimadores de momentos, mínimos quadrados, consistência
 
