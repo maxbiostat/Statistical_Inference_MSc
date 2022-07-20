@@ -1,0 +1,104 @@
+\documentclass[a4paper,10pt, notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{mathtools}
+\usepackage[portuguese]{babel}
+
+%%%%%%%%%%%%%%%%%%%% Notation stuff
+\newcommand{\pr}{\operatorname{Pr}} %% probability
+\newcommand{\vr}{\operatorname{Var}} %% variance
+\newcommand{\rs}{X_1, X_2, \ldots, X_n} %%  random sample
+\newcommand{\irs}{X_1, X_2, \ldots} %% infinite random sample
+\newcommand{\rsd}{x_1, x_2, \ldots, x_n} %%  random sample, realised
+\newcommand{\bX}{\boldsymbol{X}} %%  random sample, contracted form (bold)
+\newcommand{\bx}{\boldsymbol{x}} %%  random sample, realised, contracted form (bold)
+\newcommand{\bT}{\boldsymbol{T}} %%  Statistic, vector form (bold)
+\newcommand{\bt}{\boldsymbol{t}} %%  Statistic, realised, vector form (bold)
+\newcommand{\emv}{\hat{\theta}}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\newcommand{\rpl}{\mathbb{R}_+}
+
+
+% Title Page
+\title{Exercícios: verossimilhança e suficiência}
+\author{Disciplina: Inferência Estatística (MSc) \\ Instrutor: Luiz Carvalho}
+\date{Junho/2022}
+
+\begin{document}
+\maketitle
+
+\paragraph{Motivação:}
+A suficiência é um dos pilares dos chamados ``princípios de redução de dados''; uma estatística suficiente encapsula toda a informação sobre um parâmetro e, portanto, deve ser preferida na busca por bons estimadores (veremos isso em detalhes em aulas posteriores).
+Nesta lista de exercícios vamos trabalhar o conceito de suficiência e a sua conexão com a função de verossimilhança -- através do Teorema de Fatorização de Neyman-Fisher\footnote{Ronald Aylmer Fisher (1890--1962), biólogo e estatístico inglês. Jerzy Neyman (1894--1981), matemático e estatístico polonês.}.
+
+\paragraph{Notação:} Como convenção adotamos $\mathbb{R} = (-\infty, \infty)$, $\rpl = (0, \infty)$ e $\mathbb{N} = \{1, 2, \ldots \}$.
+
+\paragraph{Dos livros-texto:}
+
+\begin{itemize}
+    \item[a)] KN, Ch3: 4, 9a, 16a, 16b;
+    \item[b)] CB, Ch6: 6.1, 6.7.
+\end{itemize}
+
+
+\paragraph{Extra:}
+
+\begin{enumerate}
+    \item Mostre que se $\rs \sim P_\theta$ são amostra aleatória de uma família paramétrica qualquer, então
+    $$T(\rs) = (X_{(1)}, X_{(2)}, \ldots, X_{(n)}),$$
+    é suficiente para $\theta$.
+    \item Seja $\rs$ uma amostra aleatória de $P_\theta$ e $\rsd$ uma amostra observada (realizada).
+    Para cada um dos modelos abaixo, apresente a função de verossimilhança uma estatística suficiente para $\theta$:
+    \begin{enumerate}
+        \item (\textbf{Weibull})
+        \begin{equation*}
+            f_\theta(x) = \theta_1\theta_2 x^{\theta_2-1}\exp\left(-\theta_1 x^{-\theta_2}\right)\mathbb{I}(x \in \rpl), (\theta_1, \theta_2) \in \rpl \times \rpl;
+        \end{equation*}
+        \item (\textbf{Pareto}) 
+        \begin{equation*}
+            f_\theta(x) = \frac{\theta_1\theta_2^{\theta_1}}{x^{\theta_1 + 1}}\mathbb{I}\left(x \in (\theta_2, \infty)\right), (\theta_1, \theta_2) \in \rpl \times \rpl;
+        \end{equation*}
+        \item (\textbf{Uniforme Discreta})
+        \begin{equation*}
+            P_\theta(X = x) = \frac{1}{\theta}\mathbb{I}(x \in \{1, 2, \ldots,\theta\}), \theta \in \mathbb{N};
+        \end{equation*}
+        \item (\textbf{Binomial negativa})
+        \begin{equation*}
+            P_\theta(X = x) = \binom{x + \theta_1 - 1}{\theta_1-1}(1-\theta_2)^x \theta_2^x, (\theta_1, \theta_2) \in \mathbb{N} \times (0, 1).
+        \end{equation*}
+    \end{enumerate}
+    \item Dizemos que uma amostra aleatória tem distribuição gaussiana inversa se a densidade comum vale
+    \begin{equation*}
+        f_\theta(x) = \sqrt{\frac{\theta_1}{2\pi x^3}} \exp\left(\frac{\theta_1(x-\theta_2)^2}{2\theta_2^2x}\right)\mathbb{I}(x \in \mathbb{R}+),
+    \end{equation*}
+    para $(\theta_1, \theta_2) \in \rpl \times \mathbb{R}_{+}$.
+    Encontre uma estatística suficiente nos seguintes casos:
+    \begin{enumerate}
+        \item $g(\theta) = \theta_1$ e $\theta_2$ é conhecido;
+        \item $g(\theta) = \theta_2$ e $\theta_1$ é conhecido;
+        \item $g(\theta) = (\theta_1, \theta_2)$, isto é, ambos são desconhecidos.
+    \end{enumerate}
+    \item \textbf{Desafio}: Seja $\rs$ uma amostra aleatória de uma distribuição $\operatorname{Uniforme}(0, \theta)$. 
+    Mostre que $T(\rs) = \max(\rs)$ é suficiente para $\theta$ \underline{\textbf{sem}} usar o Teorema da Fatorização de Neyman-Fisher.
+    
+    \textbf{Dica:} Seja $\rs \sim P_\theta$ uma a.a. de uma família paramétrica qualquer.
+    Se observamos a $i$-ésima estatística de ordem $X_{(i)} = a$, então:
+    \begin{itemize}
+        \item[i)] Para todo $j< i$, $X_{(j)} | X_{(i)}$ tem distribuição com densidade $f_\theta(x)/F_\theta(x)$;
+        \item[ii)] Similarmente, para $k > i$, $X_{(k)} | X_{(i)}$ tem distribuição com densidade $f_\theta(x)/[1-F_\theta(x)]$.
+    \end{itemize}
+\end{enumerate}
+% \newpage
+
+
+
+% \bibliographystyle{apalike}
+% \bibliography{refs}
+
+\end{document}          

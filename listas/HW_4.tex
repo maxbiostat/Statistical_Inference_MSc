@@ -1,0 +1,74 @@
+\documentclass[a4paper,10pt, notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{mathtools}
+\usepackage[portuguese]{babel}
+
+%%%%%%%%%%%%%%%%%%%% Notation stuff
+\newcommand{\pr}{\operatorname{Pr}} %% probability
+\newcommand{\vr}{\operatorname{Var}} %% variance
+\newcommand{\rs}{X_1, X_2, \ldots, X_n} %%  random sample
+\newcommand{\ods}{X_{(1)}, X_{(2)}, \ldots, X_{(n)} } %%  ordered sample
+\newcommand{\irs}{X_1, X_2, \ldots} %% infinite random sample
+\newcommand{\rsd}{x_1, x_2, \ldots, x_n} %%  random sample, realised
+\newcommand{\bX}{\boldsymbol{X}} %%  random sample, contracted form (bold)
+\newcommand{\bx}{\boldsymbol{x}} %%  random sample, realised, contracted form (bold)
+\newcommand{\bT}{\boldsymbol{T}} %%  Statistic, vector form (bold)
+\newcommand{\bt}{\boldsymbol{t}} %%  Statistic, realised, vector form (bold)
+\newcommand{\emv}{\hat{\theta}}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\newcommand{\rpl}{\mathbb{R}_+}
+
+
+% Title Page
+\title{Exercícios: Métodos de Estimação (Momentos, Máxima Verossimilhança)}
+\author{Disciplina: Inferência Estatística (MSc) \\ Instrutor: Luiz Carvalho}
+\date{Julho/2022}
+
+\begin{document}
+\maketitle
+
+\paragraph{Motivação:} Em aula vimos os métodos de momentos, de mínimos quadrados e de máxima verossimilhança para obter estimativas (e estimadores!) de parâmetros e quantidades de interesse. Nesta lista você vai praticar encontrar esses estimadores e entender suas propriedades.
+
+\paragraph{Notação:} Como convenção adotamos $\mathbb{R} = (-\infty, \infty)$, $\rpl = (0, \infty)$ e $\mathbb{N} = \{1, 2, \ldots \}$.
+
+\paragraph{Dos livros-texto:}
+
+\begin{itemize}
+    \item[a)] KN, Ch9: 17a, 21a, 21b.
+    \item[b)] CB, Ch7: 7.1, 7.2\footnote{Se precisar, peça ajuda ao monitor para a parte computacional.}, 7.6, 7.11, 7.12, 7.19, 7.37, 7.38.
+\end{itemize}
+
+
+\paragraph{Extra:}
+
+\begin{enumerate}
+    \item \textbf{Desafio}:  Seja $\rs$ uma amostra aleatória de uma família dominada, cuja densidade comum (com respeito a Lebesgue) é  $$ f_\theta(x) = \frac{\exp(-|x-\theta|)}{2}\mathbb{I}(x \in \mathbb{R}), \: \theta \in \mathbb{R}.$$
+    Suponha que $n$ é par e encontre o estimator de máxima verossimilhança para $g(\theta) = \sin(\theta)/\theta$.
+    Que peculiaridades tem esse estimador?
+    
+    \textbf{Dica:} Considere escrever a função de verossimilhança em termos da função sinal:
+    \begin{equation*}
+\operatorname{sgn}(x)=
+\begin{cases}
+-1,\quad x < 0,\\
+\:\:\:0, \quad x = 0,\\
+\:\:\:1, \quad x > 0.
+\end{cases}
+    \end{equation*}
+    para $x \in \mathbb{R}$.
+\end{enumerate}
+% \newpage
+
+
+
+% \bibliographystyle{apalike}
+% \bibliography{refs}
+
+\end{document}          

@@ -1,0 +1,83 @@
+\documentclass[a4paper,10pt, notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{mathtools}
+\usepackage[portuguese]{babel}
+
+%%%%%%%%%%%%%%%%%%%% Notation stuff
+\newcommand{\pr}{\operatorname{Pr}} %% probability
+\newcommand{\vr}{\operatorname{Var}} %% variance
+\newcommand{\rs}{X_1, X_2, \ldots, X_n} %%  random sample
+\newcommand{\ods}{X_{(1)}, X_{(2)}, \ldots, X_{(n)} } %%  ordered sample
+\newcommand{\irs}{X_1, X_2, \ldots} %% infinite random sample
+\newcommand{\rsd}{x_1, x_2, \ldots, x_n} %%  random sample, realised
+\newcommand{\bX}{\boldsymbol{X}} %%  random sample, contracted form (bold)
+\newcommand{\bx}{\boldsymbol{x}} %%  random sample, realised, contracted form (bold)
+\newcommand{\bT}{\boldsymbol{T}} %%  Statistic, vector form (bold)
+\newcommand{\bt}{\boldsymbol{t}} %%  Statistic, realised, vector form (bold)
+\newcommand{\emv}{\hat{\theta}}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\newcommand{\rpl}{\mathbb{R}_+}
+
+
+% Title Page
+\title{Exercícios: suficiência mínima, completude e ancilaridade}
+\author{Disciplina: Inferência Estatística (MSc) \\ Instrutor: Luiz Carvalho}
+\date{Julho/2022}
+
+\begin{document}
+\maketitle
+
+\paragraph{Motivação:} Ainda dentro da temática de ``redução de dados'', temos suficiência mínima\footnote{Em certo sentido, uma estatística suficiente mínima (ou minimal) é a representação mais ``grossa'' dos dados que ainda assim é suficiente.}, completude e ancilaridade.
+Podemos encarar suficiência mínima e ancilaridade como dois extremos em relação ao parâmetro de interesse, $\theta$: se a suficiência mínima nos diz que a estatística $T$ traz toda a informação sobre $\theta$ contida na amostra  da maneira mais compacta possível, ancilaridade nos diz que a distribuição de $T$ nem depende de $\theta$. 
+Já a completude é uma condição técnica, que pode ser útil para mostrar suficiência mínima (Bahadur) ou independência entre quantidades de interesse (Basu).
+
+\paragraph{Notação:} Como convenção adotamos $\mathbb{R} = (-\infty, \infty)$, $\rpl = (0, \infty)$ e $\mathbb{N} = \{1, 2, \ldots \}$.
+
+\paragraph{Dos livros-texto:}
+
+\begin{itemize}
+    \item[a)] KN, Ch 3.7: 6, 7, 9b, 12, 15 e 16;
+    \item[b)] CB, Ch6: 6.8, 6.9 e 6.31.
+\end{itemize}
+
+\paragraph{Extra:}
+
+\begin{enumerate}
+    \item Defina $\mathcal{P}_\sigma$ como a família de todas as distribuições normais com desvio-padrão $\sigma >0$. Seja $\rs$ uma amostra aleatória de $\mathcal{P}_\sigma$.
+    \begin{itemize}
+        \item Mostre que a média amostral $\bar{X}_n = \frac{1}{n}\sum_{i=1}^n X_i$ é estatística \underline{suficiente} e \underline{completa};
+        \item Mostre que a variância amostral,
+        $$S_n^2 := \frac{1}{n-1} \sum_{i=1}^n \left(X_i - \bar{X}_n\right)^2,$$
+        é ancilar para $\mu$.
+        \item Conclua que $\bar{X}_n$ e $S_n^2$ são independentes. O que acontece se considerarmos a família de todas as distribuições normais com média $\mu \in \mathbb{R}$ e desvio-padrão $\sigma >0$ desconhecidos?
+    \end{itemize}
+    \item Seja $\rs$ uma amostra aleatória de uma distribuição Cauchy com locação $\theta$ e escala $\gamma = 1$, com densidade comum (com respeito a Lebesgue)
+    $$ f_\theta(x) = \frac{1}{\pi [ 1 +  (x-\theta)^2]}\mathbb{I}(x \in \mathbb{R}).$$
+    Mostre que $T(\bX_n) = (X_{(1)}, \ldots, X_{(n)})$ é suficiente e não há como atingir nenhuma outra redução. \textbf{Dica:} ver exercícios de CB acima. 
+    \item Seja $\rs$ uma amostra aleatória de uma família dominada, cuja densidade comum (com respeito a Lebesgue) é  $$ f_\theta(x) = \frac{\exp(-|x-\theta|)}{2}\mathbb{I}(x \in \mathbb{R}), \: \theta \in \mathbb{R}.$$
+    Mostre que $T(\bX) = (\ods)$ é suficiente mínima para este modelo.
+    \item \textbf{Desafio}:
+ Suponha que $\rs$ são i.i.d. com densidade comum com respeito a Lebesgue 
+ $$ f_\theta(x) = \frac{1}{\theta^2} \exp \left(-\frac{(x-\theta)}{\theta^2}\right)\mathbb{I}(x > \theta),$$
+ para $\theta>0$.
+    \begin{itemize}
+        \item Encontre estatística suficiente mínima, $T$, para este modelo;
+        \item Mostre que T não é completa.
+    \end{itemize}
+    \textbf{Dica:} Considere estatísticas de ordem.
+\end{enumerate}
+% \newpage
+
+
+
+% \bibliographystyle{apalike}
+% \bibliography{refs}
+
+\end{document}          
