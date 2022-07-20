@@ -76,3 +76,4 @@ Tópicos marcados com um `*` são extra e em geral designam material mais avanç
 - KN, Cap 8 e 9;
 - SV, Cap 7.3;
 -  `*` [Wald (1949)](https://projecteuclid.org/journals/annals-of-mathematical-statistics/volume-20/issue-4/Note-on-the-Consistency-of-the-Maximum-Likelihood-Estimate/10.1214/aoms/1177729952.full). 
+-  Aqui um [exemplo interessante](https://radfordneal.wordpress.com/2008/08/09/inconsistent-maximum-likelihood-estimation-an-ordinary-example/) de um EMV inconsistente num caso unidimensional.
