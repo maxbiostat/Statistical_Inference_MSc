@@ -13,10 +13,10 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 
 ## Listas
 
-[[Lista 1: verossimilhança e suficiência]](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista1_InfEst_MSc.pdf)
-[[Lista 2: suficiência mínima, completude e ancilaridade]](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista2_InfEst_MSc.pdf)
-[[Lista 3: Estimação não-viesada]](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista3_InfEst_MSc.pdf)
-[[Lista 4: Métodos de Estimação]](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista4_InfEst_MSc.pdf)
+- [Lista 1](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista1_InfEst_MSc.pdf): verossimilhança e suficiência;
+- [Lista 2](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista2_InfEst_MSc.pdf): suficiência mínima, completude e ancilaridade;
+- [Lista 3](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista3_InfEst_MSc.pdf): Estimação não-viesada;
+- [Lista 4](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista4_InfEst_MSc.pdf): Métodos de Estimação.
 
 
 ## Aula 1: Revisão de Probabilidade
