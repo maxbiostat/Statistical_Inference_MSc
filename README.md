@@ -74,5 +74,5 @@ Tópicos marcados com um `*` são extra e em geral designam material mais avanç
 ## Aula 8: Estimador de máxima verossimilhança II
 
 - KN, Cap 8 e 9;
-- SV, Cap 7.3.
--  `*` [Wald (1949)](https://projecteuclid.org/journals/annals-of-mathematical-statistics/volume-20/issue-4/Note-on-the-Consistency-of-the-Maximum-Likelihood-Estimate/10.1214/aoms/1177729952.full)
+- SV, Cap 7.3;
+-  `*` [Wald (1949)](https://projecteuclid.org/journals/annals-of-mathematical-statistics/volume-20/issue-4/Note-on-the-Consistency-of-the-Maximum-Likelihood-Estimate/10.1214/aoms/1177729952.full). 
