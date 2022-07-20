@@ -4,6 +4,7 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 
 - [Programa (provisório)](https://docs.google.com/spreadsheets/d/1szd83K73sLuliVOLTpiFWMIW9guEcbbV-wZvUgoIcrg/edit#gid=0).
 
+Tópicos marcados com um `*` são extra e em geral designam material mais avançado.
 
 ### Bibliografia
 
@@ -74,4 +75,4 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 
 - KN, Cap 8 e 9;
 - SV, Cap 7.3.
-
+- * [Wald (1949)](https://projecteuclid.org/journals/annals-of-mathematical-statistics/volume-20/issue-4/Note-on-the-Consistency-of-the-Maximum-Likelihood-Estimate/10.1214/aoms/1177729952.full)
