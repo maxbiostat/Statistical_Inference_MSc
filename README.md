@@ -11,6 +11,14 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 - [SV] Schervish, M. J. (2012). Theory of Statistics. Springer Science & Business Media.
 - [KN] Keener, R. W. (2011). Theoretical Statistics: Topics for a core course. Springer. 
 
+## Listas
+
+[[Lista 1: verossimilhança e suficiência]](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista1_InfEst_MSc.pdf)
+[[Lista 2: suficiência mínima, completude e ancilaridade]](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista2_InfEst_MSc.pdf)
+[[Lista 3: Estimação não-viesada]](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista3_InfEst_MSc.pdf)
+[[Lista 4: Métodos de Estimação]](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista4_InfEst_MSc.pdf)
+
+
 ## Aula 1: Revisão de Probabilidade
 
 - KN, Cap 6;
@@ -24,9 +32,6 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 - CB, seção 6.3.1 (pág 290).
 
 ## Aula 3: Suficiência e Neyman-Fisher
-
-[[Lista 1]](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista1_InfEst_MSc.pdf)
-
 - KN, Caps 3 e 6;
 - CB Caps 5 (opcional, fala sobre as propriedades de amostras aleatórias) e 6 (seção 6.2);
 - SV, Cap 2.
@@ -43,6 +48,8 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 - CB, Cap 7.
 
 ## Aula Extra: Família exponencial
+
+[[Aula gravada]](https://youtu.be/-_Z42K96MAc)
 
 - KN, Cap 2;
 - SV, Cap 2.2;
