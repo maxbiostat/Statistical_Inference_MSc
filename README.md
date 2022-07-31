@@ -1,6 +1,6 @@
 # Inferência Estatística (MSc)
 
-Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv.br/disciplina/inferencia-estatistica), ministrada no Programa de pós-graduação em Matemática Aplicada da Escola de Matemática Aplicada da Fundação Getulio Vargas ([FGV/EMAp](https://emap.fgv.br/)).
+Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv.br/disciplina/inferencia-estatistica), ministrada no Programa de pós-graduação em Modelagem Matemática da Escola de Matemática Aplicada da Fundação Getulio Vargas ([FGV/EMAp](https://emap.fgv.br/)).
 
 - [Programa (provisório)](https://docs.google.com/spreadsheets/d/1szd83K73sLuliVOLTpiFWMIW9guEcbbV-wZvUgoIcrg/edit#gid=0).
 
