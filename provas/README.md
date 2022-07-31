@@ -3,7 +3,7 @@
 Lembre-se: prova também é peça pedagógica; leia as soluções propostas com atenção e você provavelmente aprenderá mais alguma coisa!
 
 
-#### P1 (2022/4)
+#### P1 (2022/3)
 
 [[PDF](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/provas/P1_InfEst_2022.pdf)]
 
