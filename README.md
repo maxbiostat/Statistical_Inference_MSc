@@ -87,3 +87,8 @@ Tópicos marcados com um `*` são extra e em geral designam material mais avanç
 
 - KN, Cap 9.3, 9.4 e 9.5;
 - CB, Cap 9.
+
+
+## Miscelânea
+
+- A questão 4 (bônus) da [P1 2022](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/provas/P1_InfEst_2022.pdf) foi inspirada por [este post](https://stats.stackexchange.com/questions/122917/when-if-ever-is-a-median-statistic-a-sufficient-statistic) do Prof. [Christian Robert](https://xianblog.wordpress.com/). 
