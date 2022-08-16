@@ -87,7 +87,7 @@ Tópicos marcados com um `*` são extra e em geral designam material mais avanç
 
 - KN, Cap 9.3 e 9.4;
 - CB, Cap 9.
-- [código](https://github.com/maxbiostat/Statistical_Inference_BSc/blob/master/code/IC_normal_cobertura.r) para rodar o experimento de cobertura no caso normal. Modifique para fazer o experimento que fizemos em sala com `mu` **e** `sigma^2` variando.
+- [Código](https://github.com/maxbiostat/Statistical_Inference_BSc/blob/master/code/IC_normal_cobertura.r) para rodar o experimento de cobertura no caso normal. Modifique para fazer o experimento que fizemos em sala com `mu` **e** `sigma^2` variando.
 
 ## Aula 10: Intervalos de confiança e pivôs aproximados (assintóticos)
 
