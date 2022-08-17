@@ -1,0 +1,110 @@
+\documentclass[a4paper,10pt, notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{mathtools}
+\usepackage[portuguese]{babel}
+
+%%%%%%%%%%%%%%%%%%%% Notation stuff
+\newcommand{\pr}{\operatorname{Pr}} %% probability
+\newcommand{\vr}{\operatorname{Var}} %% variance
+\newcommand{\rs}{X_1, X_2, \ldots, X_n} %%  random sample
+\newcommand{\ods}{X_{(1)}, X_{(2)}, \ldots, X_{(n)} } %%  ordered sample
+\newcommand{\irs}{X_1, X_2, \ldots} %% infinite random sample
+\newcommand{\rsd}{x_1, x_2, \ldots, x_n} %%  random sample, realised
+\newcommand{\bX}{\boldsymbol{X}} %%  random sample, contracted form (bold)
+\newcommand{\bx}{\boldsymbol{x}} %%  random sample, realised, contracted form (bold)
+\newcommand{\bT}{\boldsymbol{T}} %%  Statistic, vector form (bold)
+\newcommand{\bt}{\boldsymbol{t}} %%  Statistic, realised, vector form (bold)
+\newcommand{\emv}{\hat{\theta}}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\newcommand{\rpl}{\mathbb{R}_+}
+
+% Title Page
+\title{Exercícios: Estimação intervalar e quantidades pivotais}
+\author{Disciplina: Inferência Estatística (MSc) \\ Instrutor: Luiz Carvalho}
+\date{Agosto/2022}
+
+\begin{document}
+\maketitle
+
+\paragraph{Motivação:} Estimativas pontuais não são adequadas a todas as situações.
+Em várias aplicações queremos produzir estimativas que carreguem uma noção inerente de incerteza. 
+Os intervalos de confiança são a ferramenta adequada para quantificar a incerteza sobre nossas inferências, ao mesmo tempo que vêm com garantias probabilísticas que fazem sentido dentro do paradigma clássico (frequentista).
+As quantidades pivotais ou pivôs são transformações (dependentes dos parâmetros) cuja distribuição não depende dos parâmetros de interesse, e são extremamente úteis na construção de intervalos de confiança, sejam eles exatos ou aproximados.
+Neste conjunto de exercícios vamos explorar as propriedades de pivôs e intervalos de confiança, tanto nas situações onde as quantidades são exatas quanto em situações de grandes amostras onde as propriedades se verificam aproximadamente.
+
+\paragraph{Notação:} Como convenção adotamos $\mathbb{R} = (-\infty, \infty)$, $\rpl = (0, \infty)$ e $\mathbb{N} = \{1, 2, \ldots \}$.
+
+\paragraph{Dos livros-texto:}
+
+\begin{itemize}
+    \item[a)] KN, Ch9:  9.1, 9.2, 9.3, 9.8, 9.13, 9.21, 9.33(a), 9.34.
+    \item[b)] CB, Ch9: 11 (desafio), 14.
+\end{itemize}
+
+\paragraph{Extra:}
+
+\begin{enumerate} 
+\item Tome $\rs$ uma amostra aleatória de uma distribuição normal com média $\mu \in \mathbb{R}$ e variância $\sigma^2 \in \mathbb{R}_+$, ambas desconhecidas.
+Defina $\bar{X}_n = \sum_{i=1}^n X_i/n$ e $S_n^2 = \sum_{i=1}^n (X_i -\bar{X}_n )/(n-1)$.
+
+Derive a distribuição (incluindo a densidade com respeito a Lebesgue) das seguintes quantidades:
+\begin{enumerate}
+    \item Média padronizada:
+    \begin{equation*}
+        Z_n  := \sqrt{n}\frac{\bar{X}_n - \mu}{\sigma};
+    \end{equation*}
+    \item Variância escalonada:
+    \begin{equation*}
+        V_n := \frac{(n-1)S_n^2}{\sigma^2};
+    \end{equation*}
+    \item Quantidade $t$ de Student:
+    \begin{equation*}
+        T_n := \sqrt{n-1}\frac{Z_n}{\sqrt{V_n}}.
+    \end{equation*}
+\end{enumerate}
+ \item (\textbf{Beta}) 
+ Considere uma amostra aleatória $\rs$  de uma distribuição Beta com parâmetros $\theta$ (desconhecido) e $\beta = 1$, isto é com pdf comum
+ \begin{equation*}
+     f_\theta(x) = \theta x^{\theta-1}\mathbb{I}(x \in (0, 1)).
+ \end{equation*}
+ \begin{enumerate}
+     \item Encontre a distribuição assintótica para o estimador de máxima verossimilhança de
+      \begin{itemize}
+          \item $g_1(\theta) = \theta$;
+          \item $g_2(\theta) = \frac{\theta}{1+\theta}$.
+      \end{itemize}
+     \item Encontre uma quantidade pivotal  para $\theta$ e use-a para construir um intervalo de confiança de $(1-\alpha)\%$ para $\theta$.
+ \end{enumerate}
+  \item (\textbf{Beta escalonada})
+  Considere uma amostra aleatória $\rs$  de uma distribuição com pdf comum
+   \begin{equation*}
+     f_\theta(x) = \frac{\theta x^{\theta-1}}{\tau^\theta}\mathbb{I}(x \in (0, \tau)),
+ \end{equation*}
+ com $\tau >0$ conhecida e $\theta > 0$ desconhecida.
+ \begin{enumerate}
+     \item Encontre o estimador $\delta_{\text{EMV}}(\bX_n)$ de máxima verossimilhança para $\theta$;
+     \item Mostre que 
+     \begin{equation*}
+         T(\bX_n) := \frac{2n\theta}{\delta_{\text{EMV}}(\bX_n)}
+     \end{equation*}
+     é uma quantidade pivotal e encontre sua distribuição.
+     Depois use $ T(\bX_n)$ para construir um intervalo de confiança exato de 
+     \item Construa um intervalo de confiança assintótico (aproximado) de $(1-\alpha)\%$ para $\theta$.
+     \item \textbf{[Computacional]} Compare os dois intervalos obtidos quanto à cobertura (o aproximado bate perto da cobertura nominal?) e largura dos intervalos obtidos.
+ \end{enumerate}
+ % \item \textbf{Desafio}:      
+ % \textbf{Dica:} 
+\end{enumerate}
+% \newpage
+% \bibliographystyle{apalike}
+% \bibliography{refs}
+
+\end{document}          
+
