@@ -100,7 +100,7 @@ Tópicos marcados com um `*` são extra e em geral designam material mais avanç
 - KN, 8.2;
 - CB, Cap 5.5, Cap 10.1.3;
 - [Este](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/apoio/2005_Cox_DeltaMethod.pdf) artigo de [Chris Cox](https://publichealth.jhu.edu/faculty/1593/christopher-cox) para a [Encyclopedia of Biostatistics](https://onlinelibrary.wiley.com/doi/book/10.1002/0470011815).
-- [Script](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/codigo/delta_method.R) para o método delta no caso Poisson.
+- [Script](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/codigo/delta_method.R) para o método delta no caso Poisson, por @isaquepim.
 
 ## Miscelânea
 
