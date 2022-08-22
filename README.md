@@ -97,22 +97,22 @@ Tópicos marcados com um `*` são extra e em geral designam material mais avanç
 
 ## Aula 11: Método Delta e transformadas estabilizadoras da variância
 
-- KN, 8.2;
+- KN, Cap 8.2;
 - CB, Cap 5.5, Cap 10.1.3;
 - [Este](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/apoio/2005_Cox_DeltaMethod.pdf) artigo de [Chris Cox](https://publichealth.jhu.edu/faculty/1593/christopher-cox) para a [Encyclopedia of Biostatistics](https://onlinelibrary.wiley.com/doi/book/10.1002/0470011815).
 - [Script](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/codigo/delta_method.R) para o método delta no caso Poisson, por @isaquepim.
 
 ## Aula 12: Testes de hipóteses I: definições e conceitos
 
-- CB, Ch8: 8.2.1, 8.3.1, 8.3.2, 8.3.3;
-- KN, Ch12: 12.1, 12.2, 12.3;
-- SV, Ch4: 4.1, 4.3.
+- CB, Cap 8: 8.2.1, 8.3.1, 8.3.2, 8.3.3;
+- KN, Cap 12: 12.1, 12.2, 12.3;
+- SV, Cap 4: 4.1, 4.3.
 
 ## Aula 13: Testes de hipóteses II: Karlin-Rubin e dualidade com ICs
 
-- CB, Ch8: 8.3;
-- KN, Ch12: 12.4;
-- SV, Ch4: 4.4, 4.6.
+- CB, Cap 8: 8.3;
+- KN, Cap 12: 12.4;
+- SV, Cap 4: 4.4, 4.6.
 
 ## Miscelânea
 
