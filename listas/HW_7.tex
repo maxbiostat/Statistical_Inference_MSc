@@ -1,0 +1,83 @@
+\documentclass[a4paper,10pt, notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{mathtools}
+\usepackage[portuguese]{babel}
+
+%%%%%%%%%%%%%%%%%%%% Notation stuff
+\newcommand{\pr}{\operatorname{Pr}} %% probability
+\newcommand{\vr}{\operatorname{Var}} %% variance
+\newcommand{\rs}{X_1, X_2, \ldots, X_n} %%  random sample
+\newcommand{\ods}{X_{(1)}, X_{(2)}, \ldots, X_{(n)} } %%  ordered sample
+\newcommand{\irs}{X_1, X_2, \ldots} %% infinite random sample
+\newcommand{\rsd}{x_1, x_2, \ldots, x_n} %%  random sample, realised
+\newcommand{\bX}{\boldsymbol{X}} %%  random sample, contracted form (bold)
+\newcommand{\bx}{\boldsymbol{x}} %%  random sample, realised, contracted form (bold)
+\newcommand{\bT}{\boldsymbol{T}} %%  Statistic, vector form (bold)
+\newcommand{\bt}{\boldsymbol{t}} %%  Statistic, realised, vector form (bold)
+\newcommand{\emv}{\hat{\theta}}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\newcommand{\rpl}{\mathbb{R}_+}
+
+% Title Page
+\title{Exercícios: Testes de hipóteses}
+\author{Disciplina: Inferência Estatística (MSc) \\ Instrutor: Luiz Carvalho}
+\date{Agosto/2022}
+
+\begin{document}
+\maketitle
+
+
+\paragraph{Notação:} Como convenção adotamos $\mathbb{R} = (-\infty, \infty)$, $\rpl = (0, \infty)$ e $\mathbb{N} = \{1, 2, \ldots \}$.
+
+\paragraph{Motivação:} Testes de hipóteses são ferramentas matemáticas para avaliar a compatibilidade de dados observados com afirmações sobre a configuração do espaço de medidas que os possam ter gerado. 
+Estes instrumentos encontram vasta aplicação nas ciências aplicadas, onde afirmações científicas sobre o funcionamento do mundo são traduzidas em afirmações matemáticas do tipo discutido acima. 
+Nesta lista de exercícios vamos ver a construção de testes uniformemente mais poderosos, de razão de verossimilhanças e o cálculo do valor $p$.
+
+\paragraph{Dos livros-texto:}
+
+\begin{itemize}
+    \item[a)] KN, Ch12: 10, 17, 25, 32;  
+    \item[b)] CB, Ch8: 8.1, 8.2, 8.3, 8.5, 8.8, 8.18, 8.20, 8.28, 8.31, 8.38;
+    \item[b)] CB, Ch9: 9.5, 9.6, 9.44.
+\end{itemize}
+
+\paragraph{Extra:}
+
+\begin{enumerate} 
+\item (\textbf{Existência de um TUMP}) Suponha que $\rs$ são amostra aleatória de uma distribuição normal com média $\mu$ desconhecida e variância $\sigma$ conhecida.
+Considere testar $H_0: \mu = \mu_0$ versus $H_1 = \mu \neq \mu_0$. 
+Mostre que não existe teste uniformemente mais poderoso neste caso.
+\textbf{Dica}: Construa um teste da forma
+\begin{equation*}
+    \psi_0(\bX) = \begin{cases}
+    0, \bar{X}_n \geq - \frac{\sigma z_\alpha}{\sqrt{n}} + \mu_0,\\
+    1, c.c.,
+    \end{cases}
+\end{equation*}
+e investigue o que acontece num ponto $\theta_1 < \mu_0$. 
+Depois, construa um segundo teste, complementar e use o Teorema de Neyman-Pearson para concluir que nenhum TUMP pode existir.
+\item (\textbf{Testes aleatorizados}) Tome $X_1, \ldots, X_{10}$ amostra aleatória de uma distribuição Bernoulli com parâmetro $\theta \in (0, 1)$, desconhecido.
+Considere testar $H_0: \theta \leq 1/2$ \textit{versus} $H_1: \theta > 1/2$.
+\begin{enumerate}
+ %KN pg 136
+    \item  Escreva um teste de razão de verossimilhanças para este caso;
+    \item  Mostre que não é possível atingir qualquer nível de significância $\alpha_0 \in (0, 1)$
+    \item Proponha um \textit{teste aleatorizado} que atinja um tamanho $\alpha_0 = 0.05$.
+    Isto é, proponha um teste aleatório $\psi_A$ tal que a decisão de aceitar ou não $H_0$ dependa do lançamento de uma moeda com probabilidade de sucesso $\omega_A$, e dê uma forma para $\omega_A$.
+\end{enumerate}
+   % \item \textbf{Desafio}:      
+ % \textbf{Dica:} 
+\end{enumerate}
+% \newpage
+% \bibliographystyle{apalike}
+% \bibliography{refs}
+
+\end{document}          
+
