@@ -20,6 +20,7 @@ Tópicos marcados com um `*` são extra e em geral designam material mais avanç
 - [Lista 4](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista4_InfEst_MSc.pdf): Métodos de Estimação;
 - [Lista 5](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista5_InfEst_MSc.pdf): Intervalos de confiança e quantidades pivotais;
 - [Lista 6](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista6_InfEst_MSc.pdf): Método Delta e transformações estabilizadoras da variância.
+- [Lista 7](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista7_InfEst_MSc.pdf): Testes de hipóteses.
 
 ## Provas
 
