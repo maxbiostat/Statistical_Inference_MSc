@@ -24,8 +24,8 @@ Tópicos marcados com um `*` são extra e em geral designam material mais avanç
 
 ## Provas
 
-- [P1 2022](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/provas/P1_InfEst_2022.pdf).
-
+- [P1 2022](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/provas/P1_InfEst_2022.pdf);
+- [P2 2022](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/provas/P2_InfEst_2022.pdf).
 
 ## Aula 1: Revisão de Probabilidade
 
