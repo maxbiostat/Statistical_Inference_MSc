@@ -2,7 +2,7 @@
 
 Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv.br/disciplina/inferencia-estatistica), ministrada no Programa de pós-graduação em Modelagem Matemática da Escola de Matemática Aplicada da Fundação Getulio Vargas ([FGV/EMAp](https://emap.fgv.br/)).
 
-- [Programa (provisório)](https://docs.google.com/spreadsheets/d/1szd83K73sLuliVOLTpiFWMIW9guEcbbV-wZvUgoIcrg/edit#gid=0).
+- [Programa (provisório)](https://docs.google.com/spreadsheets/d/11Zj7JVXuadvBZOLzSI5AvXhc8Q1kY8_XudKkZwgZP9g/edit?usp=sharing).
 
 Tópicos marcados com um `*` são extra e em geral designam material mais avançado.
 
