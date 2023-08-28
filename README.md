@@ -10,7 +10,12 @@ Tópicos marcados com um `*` são extra e em geral designam material mais avanç
 
 - [CB] Casella, G., & Berger, R. L. (2002). Statistical Inference. Pacific Grove, CA: Duxbury.
 - [SV] Schervish, M. J. (2012). Theory of Statistics. Springer Science & Business Media.
-- [KN] Keener, R. W. (2011). Theoretical Statistics: Topics for a core course. Springer. 
+- [KN] Keener, R. W. (2011). Theoretical Statistics: Topics for a core course. Springer.
+
+
+
+## Listas
+- Exercícios extra (não valem ponto, atualizados semanalmente) [aqui](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/README.md).
 
 ## Provas anteriores
 
