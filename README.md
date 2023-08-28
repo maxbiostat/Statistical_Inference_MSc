@@ -6,6 +6,8 @@ Material de apoio para a disciplina [Inferência Estatística ](https://emap.fgv
 
 Tópicos marcados com um `*` são extra e em geral designam material mais avançado.
 
+Programa **aproximado** [aqui](https://docs.google.com/spreadsheets/d/11Zj7JVXuadvBZOLzSI5AvXhc8Q1kY8_XudKkZwgZP9g/edit?usp=sharing)
+
 ### Bibliografia
 
 - [CB] Casella, G., & Berger, R. L. (2002). Statistical Inference. Pacific Grove, CA: Duxbury.
