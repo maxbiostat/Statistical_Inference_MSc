@@ -1,1 +1,1 @@
-![image](https://user-images.githubusercontent.com/2875083/176496535-5cfe0894-d2d4-4d50-b5bb-3831b46a99fe.png)
+![image](https://github.com/maxbiostat/Statistical_Inference_MSc/assets/2875083/dd2d0098-182b-4e0f-9bae-98ad219d7024)
