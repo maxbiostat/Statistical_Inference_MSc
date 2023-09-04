@@ -41,3 +41,10 @@ curve(ff1, lwd = 3, 0, 2*theta0, xlab = expression(T[2]),
       ylim = c(0, 10))
 curve(ff2, lwd = 3, col = 2, add = TRUE)
 curve(ff3, lwd = 3, col = 3, add = TRUE)
+legend(
+  x = "topleft",
+  legend = c("t2=0.35", "t2=0.5", "t2=0.9"),
+  lwd = 3, 
+  col = 1:3,
+  bty = 'n'
+)
