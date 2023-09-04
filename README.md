@@ -16,6 +16,7 @@ Tópicos marcados com um `*` são extra e em geral designam material mais avanç
 
 ## Listas
 - Exercícios extra (não valem ponto, atualizados semanalmente) [aqui](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/README.md).
+- [Lista 1](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista1_InfEst_MSc.pdf): verossimilhança e suficiência.
 
 ## Provas anteriores
 
