@@ -18,7 +18,7 @@ Tópicos marcados com um `*` são extra e em geral designam material mais avanç
 As listas devem ser entregues impressas/manuscritas ao monitor @isaquepim. 
 - Exercícios extra (não valem ponto, atualizados semanalmente) [aqui](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/README.md).
 - [Lista 1](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista1_InfEst_MSc.pdf): verossimilhança e suficiência. Entrega até o dia 15/09/2023.
-- [Lista 2](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista2_InfEst_MSc.pdf): verossimilhança e suficiência. Entrega até o dia 08/10/2023.
+- [Lista 2](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista2_InfEst_MSc.pdf): suficiência mínima, completude e ancilaridade. Entrega até o dia 08/10/2023.
 
 ## Provas anteriores
 
