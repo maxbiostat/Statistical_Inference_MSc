@@ -28,8 +28,8 @@
 
 % Title Page
 \title{Exercícios: Estimação não-(en)viesada}
-\author{Disciplina: Inferência Estatística (MSc)  \\ Instrutor: Luiz Carvalho}
-\date{Julho/2022}
+\author{Disciplina: Inferência Estatística (MSc)  \\ Instrutor: Luiz Carvalho \\ Monitor: Isaque Pim}
+\date{Outubro/2023}
 
 \begin{document}
 \maketitle
@@ -44,7 +44,7 @@ Nesta lista vamos pensar um pouco mais sobre estimadores viesados e não-viesado
 
 \begin{itemize}
     \item[a)] KN, Ch3.7: 1;
-    \item[b)] KN, Ch4.7: 1, 5a, 5b e (\textbf{desafio}) 28;
+    \item[b)] KN, Ch4.7: 1, 5a, 5b e (\textbf{Phd}) 28;
     \item[c)] CB, Ch6: 6.36.
 \end{itemize}
 
@@ -65,7 +65,22 @@ para $\sigma^2$.
  \item Encontre $c^\star$ de modo que $\delta_{c^\star}(\bX)$ seja admissível.
  \item $\delta_{c^\star}(\bX)$ é não-viesado?
 \end{itemize}
-    \item \textbf{Desafio}: Construir uma desigualdade mais geral para a cota inferior da variância de um estimador não-viesado.
+\item \textbf{Informação de Fisher}. Sobre a informação de Fisher, mostre que:
+\begin{enumerate}
+    \item Se $\bX_n = (\rs)$ é uma amostra aleatória, então $I_{\bX_n}(\theta) = I_n(\theta) = n I(\theta)$.
+    
+    \textbf{Dica:} Tome $X$ e $Y$ independentes e mostre que $I_{X,Y}(\theta) = I_X(\theta) + I_Y(\theta)$.
+    \item Tome $\mathcal{P}_0 = \left\{P_\theta : \theta \in \Omega\right\}$ família dominada com densidade $f_\theta$ e informação de Fisher $I(\theta)$.
+    Considere uma função bijetora $h : \Xi \to \Omega$, que induz uma família \underline{reparametrizada} $\tilde{\mathcal{P}} = \left\{P_\theta : \xi \in \Xi \right\}$, que também é dominada e tem densidade $f_\xi = f_{h(\theta)}$.
+    Exiba a forma da informação de Fisher $\tilde{I}(\xi)$.
+    \item Considere uma família exponencial de um parâmetro em forma canônica. 
+    Escreva sua informação de Fisher em termos da função geradora de cumulantes.
+    \item Combine os dois itens anteriores para escrever a informação de Fisher $I(\mu)$ de uma família exponencial parametrizada em termos da média $\mu = E_\eta[T]$, onde $T$ é a estatística suficiente para $\eta$.
+    \item \textbf{PhD} Sobre o item anterior, discuta se $T$ é ENVVM para $\mu$ e comente sobre se a desigualdade de Cramér-Rao é \textit{sharp} neste caso.
+
+    \textbf{Dica:} Estude a completude de $T$.
+\end{enumerate}
+    \item \textbf{PhD }: Construir uma desigualdade mais geral para a cota inferior da variância de um estimador não-viesado.
     \begin{itemize}
         \item Mostre que para duas variáveis aleatórias $X, Y$ quaisquer\footnote{Definidas no mesmo espaço de probabilidade.},
         $$ \vr_\theta(X) \geq \frac{[\operatorname{Cov}_\theta(X, Y)]^2}{\vr_\theta(Y)}; $$
@@ -83,15 +98,44 @@ para $\sigma^2$.
             \label{eq:HCR}
             \vr_\theta(\delta) \geq \frac{[g(\theta + \epsilon) - g(\theta)]^2}{E_\theta\left[\left\{L(X) - 1\right\}^2\right]},
         \end{equation}
-        que é a cota inferior (ou desigualdade) de Hammersley–Chapman–Robbins (HCR-LB) \footnote{O denominador da expressão é a divergência $\chi^2$ entre $P_{\theta+\epsilon}$ e $P_\theta$.}.
-        \item Discuta como recuperar a cota inferior de Cramér-Rao a partir de HCR-LB. Quais premissas extras precisamos tomar?
+        que é a cota inferior (ou desigualdade) de Hammersley–Chapman–Robbins (HCR-LB) \footnote{O denominador da expressão é a divergência qui-quadrado ($\chi^2$) entre $P_{\theta+\epsilon}$ e $P_\theta$.}.
+        \item A cota inferior de Cramér-Rao para um estimador $\delta$ de uma função diferenciável $g(\theta)$ vale
+        \begin{equation*}
+            \vr_\theta(\delta(X)) \geq \frac{\left[\frac{d}{d\theta}g(\theta)\right]^2}{I_X(\theta)},
+        \end{equation*}
+        onde $I_X(\theta)$ é a informação de Fisher baseada em $X$ -- ver SV, seção 2.3.1.
+        Discuta como recuperar a cota inferior de Cramér-Rao a partir de HCR-LB. Quais premissas extras precisamos tomar?
     \end{itemize}
+    \item Seja $\mathcal{P}$ família dominada paramétrica, com parâmetro $\theta \in \Omega$ e dando origem ao modelo $(\mathcal{X}, \mathcal{B}(\mathcal{X}), \mathcal{P})$.
+    Para $\mathcal{R} \supseteq \Omega$, tome $\delta : \mathcal{X} \to \mathcal{R}$ um estimador não-viesado de $g(\theta)$ e $\psi : \mathcal{X} \to \mathcal{R}$.
+    Considere a seguinte desigualdade (consequência de Cauchy-Schwarz):
+    \begin{equation}
+    \label{eq:info_ineq}
+        \vr_\theta(\delta) \geq \frac{\operatorname{cov}(\delta, \psi)}{\vr(\psi)}.
+    \end{equation}
+     Mostre que \cite[Thm 1]{Blyth1974} $\operatorname{cov}(\delta, \psi)$ depende de $\delta$ apenas através de $g(\theta)$ se e somente se
+     \begin{equation}
+     \label{eq:cov_unbiased}
+         \operatorname{cov}(U, \psi) = 0, \quad \forall U \in \mathcal{U},
+     \end{equation}
+     com 
+     \begin{equation*}
+         \mathcal{U} = \left\{U : E_\theta[U] = 0, E_\theta[U^2] < \infty \quad \forall \theta \in \Omega \right\},
+     \end{equation*}
+     i.e., para todo estimador não-viesado de zero.
+    \item Suponha que $g$ é U-estimável, e seja $\delta$ um estimador não-viesado de $g(\theta)$.
+    Mostre que $\delta$ atinge (\ref{eq:info_ineq}) para todo $\theta \in \Omega$ e alguma $\psi(x, \theta)$ satisfazendo (\ref{eq:cov_unbiased}) se e somente se $g(\theta)$ tem um ENVVM, $\delta_0$.
+    Utilize o teorema do item anterior.
+    \item Mostre que se $\vr_\theta(\delta)$ atinge Cramér-Rao, então 
+    \begin{equation*}
+        \delta(x) = g(\theta) + \frac{\frac{dg(\theta)}{d\theta}}{I_X(\theta)}\frac{\partial}{\partial\theta} f_\theta(x).
+    \end{equation*}
 \end{enumerate}
 % \newpage
 
 
 
-% \bibliographystyle{apalike}
-% \bibliography{refs}
+\bibliographystyle{apalike}
+\bibliography{refs}
 
-\end{document}          
+\end{document}     
