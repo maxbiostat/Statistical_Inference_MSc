@@ -34,7 +34,7 @@ As listas devem ser entregues impressas/manuscritas ao monitor @isaquepim.
 
 ## Modelo Estatístico
 
-- [Artigo](https://projecteuclid.org/download/pdf_1/euclid.aos/1035844977) de Peter McCullagh sobre o que é um modelo estatístico (ver também referências na introdução);
+- `*` [Artigo](https://projecteuclid.org/download/pdf_1/euclid.aos/1035844977) de Peter McCullagh sobre o que é um modelo estatístico (ver também referências na introdução);
 - SV, seção 1.5.5 (pág 50);
 - CB, seção 6.3.1 (pág 290).
 
@@ -47,6 +47,7 @@ As listas devem ser entregues impressas/manuscritas ao monitor @isaquepim.
 - KN, Cap 3;
 - SV, Cap 2;
 - CB, Cap 6.2.
+- `*` [Este](https://doi.org/10.2307/2287834) artigo do grande [Erich Lehmann](https://en.wikipedia.org/wiki/Erich_Leo_Lehmann) fala sobre a interpretação de completude e sua conexão com o [teorema de Basu](https://en.wikipedia.org/wiki/Basu%27s_theorem).
 
 ## Estimadores, estimação não-viesada
 
