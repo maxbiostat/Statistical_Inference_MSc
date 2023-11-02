@@ -24,7 +24,8 @@ As listas devem ser entregues impressas/manuscritas ao monitor @isaquepim.
 ## Provas anteriores
 
 - [P1 2022](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/provas/P1_InfEst_2022.pdf);
-- [P2 2022](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/provas/P2_InfEst_2022.pdf).
+- [P2 2022](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/provas/P2_InfEst_2022.pdf);
+- [P1 2023](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/provas/P1_InfEst_2023.pdf);
 
 ## Revisão de Probabilidade
 
