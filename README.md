@@ -120,4 +120,6 @@ As listas devem ser entregues impressas/manuscritas ao monitor @isaquepim.
 
 ## Miscelânea
 
-- A questão 4 (bônus) da [P1 2022](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/provas/P1_InfEst_2022.pdf) foi inspirada por [este post](https://stats.stackexchange.com/questions/122917/when-if-ever-is-a-median-statistic-a-sufficient-statistic) do Prof. [Christian Robert](https://xianblog.wordpress.com/). 
+- A questão 4 (bônus) da [P1 2022](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/provas/P1_InfEst_2022.pdf) foi inspirada por [este post](https://stats.stackexchange.com/questions/122917/when-if-ever-is-a-median-statistic-a-sufficient-statistic) do Prof. [Christian Robert](https://xianblog.wordpress.com/).
+- Muitos resultados úteis em Estatísticas dependem de desigualdades de concentração. [Este](https://arxiv.org/pdf/2011.02258.pdf) artigo de revisão lista várias delas. 
+
