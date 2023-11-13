@@ -28,8 +28,8 @@
 
 % Title Page
 \title{Exercícios: Métodos de Estimação (Momentos, Máxima Verossimilhança)}
-\author{Disciplina: Inferência Estatística (MSc) \\ Instrutor: Luiz Carvalho}
-\date{Julho/2022}
+\author{Disciplina: Inferência Estatística (MSc) \\ Instrutor: Luiz Carvalho \\ Monitor: Isaque Pim}
+\date{Novembro/2023}
 
 \begin{document}
 \maketitle
@@ -48,8 +48,50 @@
 
 \paragraph{Extra:}
 
-\begin{enumerate}
-    \item \textbf{Desafio}:  Seja $\rs$ uma amostra aleatória de uma família dominada, cuja densidade comum (com respeito a Lebesgue) é  $$ f_\theta(x) = \frac{\exp(-|x-\theta|)}{2}\mathbb{I}(x \in \mathbb{R}), \: \theta \in \mathbb{R}.$$
+\begin{enumerate}  
+    \item \textbf{O equilíbrio de Hardy-Weinberg}\footnote{Godfrey Harold Hardy (1877-1947) foi um grande matemático Britânico famoso por dizer que seu trabalho não tinha a menor relevância para a vida real. Hardy estava errado, é claro. Wilhelm Weinberg (1862-1937) foi um médico alemão que descobriu o princípio do equilíbrio genético independentemente (e antes) de Hardy.}
+    Considere uma amostra de uma população em \underline{equilíbrio genético} com respeito a um único gene que tem dois alelos ($A$ e $a$).
+   Há três configurações possíveis, chamadas genótipos:
+    \begin{itemize}
+        \item Homozigoto recessivo: $aa$;
+        \item Heterozigoto: $Aa$;
+        \item Homozigoto dominante: $AA$.
+    \end{itemize}
+     Se assumirmos que os três genótipos são identificáveis, podemos supor que os três tipos de indivíduos occorem na população seguindo o \textit{equilíbrio de Hardy-Weinberg}.
+     Seja $X$ a variável aleatória que guarda o genótipo do indivíduo.
+     Então podemos escrever as probabilidades
+     \begin{align*}
+         \pr(X = aa) &:= p_1 = \theta^2,\\
+         \pr(X = Aa) &:= p_2 = 2\theta(1-\theta),\\
+         \pr(X = AA) &:= p_3 = (1-\theta)^2,
+     \end{align*}
+     para $\theta \in (0, 1)$.
+     Tome uma amostra de tamanho $n$ da população e seja $N_i$ o número de indivíduos do genótipo $i$ amostrados, para $i = 1, 2, 3$, de sorte que $n = \sum_{i=1}^3 N_i$.
+     \begin{enumerate}
+         \item Deduza a distribuição de $\boldsymbol{N} = (N_1, N_2, N_3)$;
+         \item Mostre como estimar $\theta$ por máxima verossimilhança;
+         \item Discuta como estimar $\theta$ pelo método dos momentos;
+         \item Avalie $\delta_s = N_1/n + N_2/n$ como estimador de $\theta$ em relação aos anteriores.
+     \end{enumerate}
+    \item Tome $n\geq 2$ e $\rs$ amostra aleatória de uma distribuição com densidade comum com respeito a Lebesgue
+    \begin{equation*}
+        p_\theta(x) = \frac{\theta}{x^2} \mathbb{I}\left(x \in [\theta, \infty)\right),
+    \end{equation*}
+    com $\theta \in \mathbb{R}_+$.
+    \begin{itemize}
+        \item Compute o EMV de $\theta$.
+        Este estimador é consistente?
+        Podemos aplicar os teoremas discutidos em aula?
+        \item Compute o viés do estimador de $g(\theta) = E_\theta[X^{-1}]$ como função do tamanho de amostra $n$ e discuta o que acontece quando $n \to \infty$.
+    \end{itemize}
+    \item  \textbf{PhD}: Tome $\mathcal{P}$ família dominada com densidade com respeito à medida de contagem em $\mathbb{N}$:
+    \begin{equation*}
+        p_\theta(x) = \frac{\theta}{x^{\theta + 1}} \mathbb{I}(x \geq 1),
+    \end{equation*}
+    para $x \in \mathbb{N}$ e $\theta > 1$.
+    Encontre estimadores de (i) momentos e (ii) máxima verossimilhança para $\theta$ e compute (e compare) suas variâncias.
+    Utilize métodos de Monte Carlo, se precisar. 
+    \item \textbf{PhD}:  Seja $\rs$ uma amostra aleatória de uma família dominada, cuja densidade comum (com respeito a Lebesgue) é  $$ f_\theta(x) = \frac{\exp(-|x-\theta|)}{2}\mathbb{I}(x \in \mathbb{R}), \: \theta \in \mathbb{R}.$$
     Suponha que $n$ é par e encontre o estimator de máxima verossimilhança para $g(\theta) = \sin(\theta)/\theta$.
     Que peculiaridades tem esse estimador?
     
@@ -72,3 +114,4 @@
 % \bibliography{refs}
 
 \end{document}          
+
