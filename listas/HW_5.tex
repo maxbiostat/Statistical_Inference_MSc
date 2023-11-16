@@ -27,8 +27,8 @@
 
 % Title Page
 \title{Exercícios: Estimação intervalar e quantidades pivotais}
-\author{Disciplina: Inferência Estatística (MSc) \\ Instrutor: Luiz Carvalho}
-\date{Agosto/2022}
+\author{Disciplina: Inferência Estatística (MSc) \\ Instrutor: Luiz Carvalho \\ Monitor: Isaque Pim}
+\date{Novembro/2023}
 
 \begin{document}
 \maketitle
@@ -45,7 +45,7 @@ Neste conjunto de exercícios vamos explorar as propriedades de pivôs e interva
 
 \begin{itemize}
     \item[a)] KN, Ch9:  9.1, 9.2, 9.3, 9.8, 9.13, 9.21, 9.33(a), 9.34.
-    \item[b)] CB, Ch9: 11 (desafio), 14.
+    \item[b)] CB, Ch9: 14; \textbf{(PhD)}11, 30 e 31.
 \end{itemize}
 
 \paragraph{Extra:}
@@ -68,6 +68,20 @@ Derive a distribuição (incluindo a densidade com respeito a Lebesgue) das segu
     \begin{equation*}
         T_n := \sqrt{n-1}\frac{Z_n}{\sqrt{V_n}}.
     \end{equation*}
+\end{enumerate}
+\item No exemplo anterior, mostre como construir um intervalo de confiança para $\sigma^2$ para (i) $\mu$ conhecida e (ii) $\mu$ desconhecida.
+\item Tome $\rs$ uma amostra aleatória de uma distribuição normal com média $\mu_1$ e variância $v_1$ e $Y_1, Y_2, \ldots, Y_m$ uma amostra aleatória de uma distribuição normal com média $\mu_2$ e variância $v_2$ com todos os parâmetros desconhecidos, i.e. $\theta = (\mu_1, v_1, \mu_2, v_2)$.
+Escreva $$\boldsymbol{Z} = (\rs,  Y_1, Y_2, \ldots, Y_m)$$ e defina $\bar{X}_n$, $\bar{Y}_m$, $S_x^2$ e $S_y^2$ de forma análoga ao que é feito no item 1 desta lista.
+
+Considere $\xi :=  g(\theta) = \mu_1 - \mu_2$ e assuma que $v_1 = v_2 = v$.
+\begin{enumerate}
+    \item Mostre que 
+    \begin{equation*}
+        t(Z, \xi) = \frac{(\bar{X}_n - \bar{Y}_m - \xi)/\sqrt{1/n + 1/m}}{\sqrt{\left[(n-1)S_x^2 + (m-1)S_y^2\right]/(n + m -2)}}
+    \end{equation*}
+    é quantidade pivotal e construa um intervalo de confiança (exato) de nível de confiança $\gamma$ para $\xi$ usando $t(\boldsymbol{Z}, \xi)$.
+    \item Agora considere $\kappa = v_2/v_1$. 
+    Mostre que $R(\boldsymbol{Z}, \kappa) = S_y^2/(\kappa S_x^2)$ é quantidade pivotal e use-a para construir intervalo de confiança para $\kappa$.
 \end{enumerate}
  \item (\textbf{Beta}) 
  Considere uma amostra aleatória $\rs$  de uma distribuição Beta com parâmetros $\theta$ (desconhecido) e $\beta = 1$, isto é com pdf comum
@@ -95,16 +109,22 @@ Derive a distribuição (incluindo a densidade com respeito a Lebesgue) das segu
          T(\bX_n) := \frac{2n\theta}{\delta_{\text{EMV}}(\bX_n)}
      \end{equation*}
      é uma quantidade pivotal e encontre sua distribuição.
-     Depois use $ T(\bX_n)$ para construir um intervalo de confiança exato de 
-     \item Construa um intervalo de confiança assintótico (aproximado) de $(1-\alpha)\%$ para $\theta$.
+     Depois use $ T(\bX_n)$ para construir um intervalo de confiança exato de  $(1-\alpha)\times100 \%$ para $\theta$;
+     \item Construa um intervalo de confiança assintótico (aproximado) de $(1-\alpha)\times100\%$ para $\theta$.
      \item \textbf{[Computacional]} Compare os dois intervalos obtidos quanto à cobertura (o aproximado bate perto da cobertura nominal?) e largura dos intervalos obtidos.
  \end{enumerate}
- % \item \textbf{Desafio}:      
- % \textbf{Dica:} 
+ 
+ \item \textbf{PhD}: Seja $\boldsymbol{X} \in \mathcal{X}$ uma amostra de uma distribuição na família paramétrica $\mathcal{P} = \{P_\theta: \theta \in \Omega \}$ e suponha que $T: \mathcal{X} \to \mathbb{R}$ é uma estatística com densidade $f_\theta(t)$. 
+ Tome $R(t, \theta)$ uma função monotônica de $t$ para todo $\theta \in \Omega$.
+ Mostre que se
+ \begin{equation*}
+     f_\theta(t) = g\left(R(t, \theta)\right)\left|\frac{\partial}{\partial t}R(t, \theta)\right|
+ \end{equation*}
+ para alguma função mensurável $g$, então $R(T(\boldsymbol{X}), \theta)$ é quantidade pivotal.
+ \textbf{Comentário: para uma aplicação, ver a questão 1 da P1 2022, que mostra como usar a cdf como pivô.} 
 \end{enumerate}
 % \newpage
 % \bibliographystyle{apalike}
 % \bibliography{refs}
 
 \end{document}          
-
