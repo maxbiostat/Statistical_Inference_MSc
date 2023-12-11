@@ -22,6 +22,9 @@ As listas devem ser entregues impressas/manuscritas ao monitor @isaquepim.
 - [Lista 3](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista3_InfEst_MSc.pdf): informação de Fisher, estimação não-viesada e mínima variância. Entrega até o dia 27/10/2023.
 - [Lista 4](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista4_InfEst_MSc.pdf): métodos de estimação. Entrega até o dia 24/11/2023.
 - [Lista 5](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista5_InfEst_MSc.pdf): estimação intervalar. Entrega até o dia 06/12/2023.
+- [Lista 6](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista6_InfEst_MSc.pdf): inferência aproximada. Entrega até o dia 23/12/2023.
+- [Lista 7](https://github.com/maxbiostat/Statistical_Inference_MSc/blob/main/listas/lista7_InfEst_MSc.pdf): Testes de hipótese. Entrega até o dia 23/12/2023.
+  
 
 ## Provas anteriores
 
