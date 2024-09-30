@@ -59,11 +59,11 @@ Nesta lista de exercícios vamos trabalhar o conceito de suficiência e a sua co
     \begin{enumerate}
         \item (\textbf{Weibull})
         \begin{equation*}
-            f_\theta(x) = \theta_1\theta_2 x^{\theta_2-1}\exp\left(-\theta_1 x^{-\theta_2}\right)\mathbb{I}(x \in \rpl), (\theta_1, \theta_2) \in \rpl \times \rpl;
+            f_\theta(x) = \theta_1\theta_2 x^{\theta_2-1}\exp\left(-\theta_1 x^{\theta_2}\right)\mathbb{I}(x \in \rpl), (\theta_1, \theta_2) \in \rpl \times \rpl;
         \end{equation*}
         \item (\textbf{Pareto}) 
         \begin{equation*}
-            f_\theta(x) = \frac{\theta_1\theta_2^{\theta_1}}{x^{\theta_1 + 1}}\mathbb{I}\left(x \in (\theta_2, \infty)\right), (\theta_1, \theta_2) \in \rpl \times \rpl;
+            f_\theta(x) = \frac{\theta_1\theta_2^{\theta_1}}{x^{\theta_1 + 1}}\mathbb{I}\left(x \in [\theta_2, \infty)\right), (\theta_1, \theta_2) \in \rpl \times \rpl;
         \end{equation*}
         \item (\textbf{Uniforme Discreta})
         \begin{equation*}
@@ -71,7 +71,7 @@ Nesta lista de exercícios vamos trabalhar o conceito de suficiência e a sua co
         \end{equation*}
         \item (\textbf{Binomial negativa})
         \begin{equation*}
-            P_\theta(X = x) = \binom{x + \theta_1 - 1}{\theta_1-1}(1-\theta_2)^x \theta_2^x, (\theta_1, \theta_2) \in \mathbb{N} \times (0, 1).
+            P_\theta(X = x) = \binom{x + \theta_1 - 1}{\theta_1-1}(1-\theta_2)^x \theta_2^{\theta_1}, (\theta_1, \theta_2) \in (\mathbb{N} \cup \{0\}) \times [0, 1].
         \end{equation*}
     \end{enumerate}
     \item Dizemos que uma amostra aleatória tem distribuição gaussiana inversa se a densidade comum vale
